@@ -1,4 +1,11 @@
-IMPORTANT: Please do not create a Pull Request without creating an issue first.
+#IMPORTANT: Please do not create a Pull Request without creating an issue first.
+
+Thank you for your contribution to the Unsecure repo. 
+Before submitting this PR, please make sure:
+
+- [ ] Your code builds clean without any errors or warnings
+- [ ] You are using approved terminology
+- [ ] You have added unit tests
 
 Any change needs to be discussed before proceeding. Failure to do so may result in the rejection of the pull request.
 
@@ -15,3 +22,5 @@ Code formatting
 Closing issues
 
 Put closes #XXXX in your comment to auto-close the issue that your PR fixes (if such).
+
+
