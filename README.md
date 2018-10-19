@@ -24,4 +24,4 @@ For each features or contribution on the project :
 
 [feature request](https://github.com/ESGI-IW/Unsecure/issues/new?template=feature.md)
 
-## Installation
+## Installation Unsecure
