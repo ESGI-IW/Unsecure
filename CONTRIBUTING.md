@@ -14,7 +14,7 @@ If you do not already have a GitHub account, you can [sign up for GitHub here](h
 - by writing or editing documentation
 - by writing specifications
 - by writing code and documentation (**no pull request is too small**: fix typos, add code comments, clean up inconsistent whitespace)
-- by reviewing [pull requests](https://github.com/project-open-data/project-open-data-dashboard/pulls).
+- by reviewing [pull requests](https://github.com/ESGI-IW/Unsecure/pulls).
 - by closing issues
 
 #### Submit Great Issues
