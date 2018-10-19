@@ -1,16 +1,5 @@
 version: '3'
 services:
-    mysql:
-        image: 'mysql:5.7'
-        ports:
-            - '3306:3306'
-        volumes:
-            - './docker/database:/var/lib/mysql'
-        environment:
-            - MYSQL_DATABASE=unsecure
-            - MYSQL_USER=esgi_iw3
-            - MYSQL_PASSWORD=docker
-            - MYSQL_RANDOM_ROOT_PASSWORD=yes
     php:
         image: 'okty/php:7.2'
         volumes:
@@ -27,3 +16,14 @@ services:
             - MAX_UPLOAD_SIZE=2M
             - PHP_CONTAINER_ID=php
             - INDEX_SUBFOLDER=public
+    mariadb:
+        image: 'mariadb:10.3'
+        ports:
+            - '3306:3306'
+        volumes:
+            - './docker/database:/var/lib/mysql'
+        environment:
+            - MYSQL_DATABASE=docker
+            - MYSQL_USER=user
+            - MYSQL_PASSWORD=password
+            - MYSQL_RANDOM_ROOT_PASSWORD=yes
