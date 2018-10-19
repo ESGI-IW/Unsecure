@@ -12,6 +12,10 @@ For each features or contribution on the project :
 * The pull request will be merged once the reviewers will be agry with the modifications.
 * Tidy up your branches using the delete button in the pull request or on the branches page.
 
+## Contributing
+
+You can access to the Contributing file here : [Contributing](https://github.com/ESGI-IW/Unsecure/CONTRIBUTING.md)
+
 ## Issue
 
 [issue report](https://github.com/ESGI-IW/Unsecure/issues/new)
