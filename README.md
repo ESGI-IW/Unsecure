@@ -25,3 +25,13 @@ For each features or contribution on the project :
 [feature request](https://github.com/ESGI-IW/Unsecure/issues/new?template=feature.md)
 
 ## Installation Unsecure
+
+* If on windows, install git bash for windows
+* Generate ssh key : ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+* Generate a gpg key : gpg --gen-key
+* Follow the procedure to add your ssh and gpg key on your github account
+* Clone the project (using your ssh key) : git clone git@github.com:ESGI-IW/Unsecure.git
+* Install Docker (docker toolbox if not on windows 10 pro)
+* Start a docker quickstart terminal and use "docker-compose up" (docker-compose build if the images are not on the hub)
+* to shutdown the process : docker-compose stop and to restart them use docker-compose start
+* Then you can acces in the application with : [ESGI-IW](https://warm-citadel-11705.herokuapp.com/)
