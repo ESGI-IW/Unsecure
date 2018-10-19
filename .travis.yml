@@ -1,12 +1,12 @@
 # Project language
 language: php
-
-# Allows use container-based infrastructure
-sudo: false
+php:
+  - 5.6
+  - 7.2
 
 # Start mysql service
 services:
-  - mysql
+  - mariadb
 
 # Cache composer packages so "composer install" is faster
 cache:
@@ -15,17 +15,12 @@ cache:
 
 # Matrix to test in every php version
 matrix:
-  # Fast finish allows to set the build as "finished" even if the "allow_failures" matrix elements are not finished yet.
-  fast_finish: true
-  include:
-    - php: 5.6
-    - php: 7.2
   allow_failures:
     - php: 7.2
 
 # Define an environment variable
 env:
-  - SYMFONY_VERSION="2.*" DB=mysql
+  - SYMFONY_VERSION="2.*" DB=mariadb
 
 before_script:
   - wget https://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -O php-cs-fixer
@@ -33,7 +28,6 @@ before_script:
 
 script:
   - ./php-cs-fixer fix . —dry-run -vv —rules=@Symfony —diff
-  - phpunit
 
 # After a build, send email notification with the build results
 notifications:
